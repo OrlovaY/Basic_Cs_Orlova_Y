@@ -4,7 +4,7 @@ int i=-10;
 int n=3;
 while (i<=n)
 {
-    Console.Write($"{i} ");
+    Console.Write($"{i} "); //вывод чисел в одну строку
     i=i+1;
 }
 
