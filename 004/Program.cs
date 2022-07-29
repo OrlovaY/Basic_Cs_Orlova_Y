@@ -2,8 +2,8 @@
 //По заданному с клавиатуры номеру дня недели вывести его название
 int dayOfWeek;//camelCase - первая буква маленькая, 
 //а следующие первые бквы - заглавными
-//dayOfWeek=Convert.ToInt32(Console.ReadLine());
-dayOfWeek=int.Parse(Console.ReadLine());
+dayOfWeek=Convert.ToInt32(Console.ReadLine());
+//dayOfWeek=int.Parse(Console.ReadLine());
 if (dayOfWeek==1) Console.WriteLine("Понедельник");
 if (dayOfWeek==2) System.Console.WriteLine("Вторник");
 if (dayOfWeek==3) System.Console.WriteLine("Среда");
