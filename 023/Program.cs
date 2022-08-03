@@ -2,9 +2,7 @@
 
 double Distance(double x1, double y1, double x2, double y2)
 {
-    double d;
-    d=Math.Sqrt(Math.Pow(x2-x1,2)+Math.Pow(y2-y1,2));
-    return d;
+    return Math.Sqrt(Math.Pow(x2-x1,2)+Math.Pow(y2-y1,2));
 }
 
 double x1=0, y1=0, x2=1, y2=1;
