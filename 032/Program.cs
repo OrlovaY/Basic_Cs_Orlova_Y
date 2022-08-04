@@ -2,8 +2,9 @@
 
 int N=8;
 int[] a=new int[N];              //объявить массив, задать его размер
+Random random=new Random();
 for(int i=0;i<a.Length;i++)      //цикл for
-    a[i]=1;
+    a[i]=random.Next(0,100);     //генерирует случайные числа
 for(int i=0;i<a.Length;i++)
     System.Console.Write($"{a[i],4}"); 
 
