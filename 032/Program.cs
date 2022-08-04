@@ -1,15 +1,25 @@
 ﻿// Задать массив из 8 целых элементов и вывести их на экран
 
-//Ввод данных
 int N=8;
-int[] a=new int[N];
+int[] a=new int[N];              //объявить массив, задать его размер
+for(int i=0;i<a.Length;i++)      //цикл for
+    a[i]=1;
+for(int i=0;i<a.Length;i++)
+    System.Console.WriteLine(a[i]);
 
-//Ввод данных
-Init(a,N);
 
-//Обработка данных
 
-//Вывод результатов
-Print(a);
+/*
+//значимые типы переменных
+int a=3;
+double b;
+float c; 
+bool bl;
 
-void Init(int [] a, int Lenght, int min, int max)
+//ссылочные типы (reference types)
+
+string s;
+int[] ar; //массив
+Random random;
+random=new Random(); 
+ar= new int[20];*/
