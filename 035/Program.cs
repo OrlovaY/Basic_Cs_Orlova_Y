@@ -8,7 +8,7 @@ for(int i=0;i<a.Length;i++)
     a[i]=random.Next(-5,8);
 
 int[] b=new int[N];
-for(int i=0;i<a.Length;i++)
+for(int i=0;i<b.Length;i++)
     b[i]=a[i]*-1;
 
 
