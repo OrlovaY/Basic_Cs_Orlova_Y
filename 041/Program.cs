@@ -10,9 +10,17 @@ System.Console.WriteLine(a);
 */
 
 int N=8;
-double[] a=new double[N];              //объявить массив, задать его размер
+double[] a=new double[N];              
 Random random=new Random();
-for(int i=0;i<a.Length;i++)      //цикл for
-    a[i]=random.Next(0,100);     //генерирует случайные числа
+for(int i=0;i<a.Length;i++)      
+    a[i]=random.Next(0,100)/10.0;     
 for(int i=0;i<a.Length;i++)
-    System.Console.Write($"{a[i],4}"); 
+    System.Console.Write($"{a[i],5}"); 
+    System.Console.WriteLine();
+    //Console.WriteLine("Минимальное значание " + a.Min());
+    //Console.WriteLine("Максимальное значение " + a.Max());
+    
+
+    
+
+ 
