@@ -31,50 +31,24 @@ void Print(int[,] a)
             System.Console.WriteLine();
     }
 }
-void ReplaceLine(int[,] a)  ///??????
+void ReplaceLine(int[,] a)
 {
     int temp = 0;
-    for (int j = 0,i = 0; i < m; i++)
-        {
-            temp = arr[i, j];
-            arr[i, j] = arr[m - 1, j];
-            arr[m - 1, j] = temp;
-        }
-    for (int j = 0; j < n; j++)
-        {
-    for (int i = 0; i < m; i++)
+            for (int i = 0,j = 0; j < n; j++)
             {
-                Console.Write($"{arr[i,j]}\t");
+                temp = arr[i, j];
+                arr[i, j] = arr[m - 1, j];
+                arr[m - 1, j] = temp;
             }
-            Console.WriteLine();
-        }
+            for (int i = 0; i < m; i++)
+            {
+                for (int j = 0; j < n; j++)
+                {
+                    Console.Write($"{arr[i,j],4}");
+                }
+                Console.WriteLine();
+            }
+
 }
 
 
-
-
-/*
-void Swap(int[,] a)
-{
-    
-}
-*/
-
-
-/*
-for(int i=0;i<a.GetLength(0)%2;i++)
-    {
-        a.GetLength(0) a.GetLength(0)-1
-
-     }
-     */
-
-//ref int b, ref int c
-/*
-for(int j=0;j<a.GetLength(1);j++)
-    {
-        int c = a [0,0];
-        int b = a [a.GetLength(1)-1,0];
-        int t = c;
-    }
-    */
