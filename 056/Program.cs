@@ -17,10 +17,6 @@ int[,] Create2DArray(int m,int n)
 Print(arr);
 System.Console.WriteLine();//?
 ReplaceLine(arr);
-//Swap(arr);
-
-
-
 
 void Print(int[,] a)
 {
