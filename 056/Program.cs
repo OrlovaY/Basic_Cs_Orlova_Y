@@ -15,8 +15,12 @@ int[,] Create2DArray(int m,int n)
     return a;
 }
 Print(arr);
-System.Console.WriteLine(a.GetLength(0),0);//?
-Swap(arr);
+System.Console.WriteLine();//?
+ReplaceLine(arr);
+//Swap(arr);
+
+
+
 
 void Print(int[,] a)
 {
@@ -27,13 +31,34 @@ void Print(int[,] a)
             System.Console.WriteLine();
     }
 }
+void ReplaceLine(int[,] a)  ///??????
+{
+    int temp = 0;
+    for (int j = 0,i = 0; i < m; i++)
+        {
+            temp = arr[i, j];
+            arr[i, j] = arr[m - 1, j];
+            arr[m - 1, j] = temp;
+        }
+    for (int j = 0; j < n; j++)
+        {
+    for (int i = 0; i < m; i++)
+            {
+                Console.Write($"{arr[i,j]}\t");
+            }
+            Console.WriteLine();
+        }
+}
 
 
+
+
+/*
 void Swap(int[,] a)
 {
     
 }
-
+*/
 
 
 /*
