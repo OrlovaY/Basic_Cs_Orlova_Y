@@ -16,7 +16,7 @@ int[,] Create2DArray(int m,int n)
     return a;
 }
 Print(arr);
-PrintSum(arr);
+Average(arr);
 System.Console.WriteLine();
 
 void Print(int[,] a)
@@ -28,38 +28,18 @@ void Print(int[,] a)
             System.Console.WriteLine();
     }
 }
-void PrintSum(int[,]a)
+void Average(int[,]a)
 {
-    int sum = 0;
-    for (int i = 0; i < m; i++) 
+    for(int j=0;j<a.GetLength(1);j++)
     {
-             for (int j=0; j<n; j++)
+        double sum=0;
+        for (int i=0;i<a.GetLength(0);i++)
         {
-             sum += a[i,j];
-        } 
-    System.Console.WriteLine(sum);
+            sum+=a[i,j];
+        }
+        System.Console.WriteLine($"Среднее африфметическое {j}-го столбца = {sum/a.GetLength(0)}");
     }
 }
-/*{
-    int sum=0;
-    int average=0;
-    for (int i=0;i<m;i++)
-    {
-    for(int j=0;j<n;j++)
-        sum+=a[j,i];
-        average=sum/n;
-       
-    }
-     System.Console.Write(average);
-}*/
 
 
 
-
-/*
-a [0,0]
-a [1,0]
-a [2,0]
-int sum=0
-sum=a[i,j]+a[i+1,j]
-*/
