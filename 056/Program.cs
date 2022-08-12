@@ -47,4 +47,29 @@ void ReplaceLine(int[,] a)
 
 }
 
+/*
+Функция замены строк без переменных
+void ReplaceLine(int[,] a)
+{
+    int temp = 0;
+            for (int i = 0,j = 0; j < a.GetLength(1); j++)
+            {
+                temp = arr[i, j];
+                arr[i, j] = arr[a.GetLength(0) - 1, j];
+                arr[a.GetLength(0) - 1, j] = temp;
+            }
+            for (int i = 0; i < a.GetLength(0); i++)
+            {
+                for (int j = 0; j < a.GetLength(1); j++)
+                {
+                    Console.Write($"{arr[i,j],4}"); //вместо этой строки return
+                }
+                Console.WriteLine();
+            }
+
+}
+*/
+20 строка //Print(arr)
+44 строка //Console.Write($"{arr[i,j],4}"); //вместо этой строки return    
+
 
